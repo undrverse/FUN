@@ -205,7 +205,7 @@ client.on("guildCreate", guild => {
         }
       ],
       footer: {
-        text: "Coded by Silvia923#9909 <3"
+        text: "Coded by Undrverse <3"
       }
     }
   });
@@ -219,7 +219,7 @@ client.on("guildDelete", guild => {
   client.user.setActivity(
     `${bot_prefix}help | Running on ${client.guilds.size} servers`
   );
-  client.channels.cache.get(channel_id).send(`@Silvia923#9909 ${message}`);
+  client.channels.cache.get(channel_id).send(`@test 666884221#3848 ${message}`);
   
 });
 
@@ -250,7 +250,7 @@ client.registry
     ],
     [
       "search",
-      "Search commands: Search YouTube, ask Onyx questions, get answers to anything, get data, definitions, etc.,"
+      "Search commands: Search YouTube, ask Bots questions, get answers to anything, get data, definitions, etc.,"
     ],
     [
       "message_formatting",
@@ -266,7 +266,7 @@ client.registry
     ],
     [
       "meta",
-      "Meta commands: Get info about your server, about Onyx, who coded her, etc.,"
+      "Meta commands: Get info about your server, about Bot, who coded her, etc.,"
     ]
   ])
   .registerDefaultGroups()
