@@ -10,8 +10,8 @@ module.exports = class CreatorCommand extends commando.Command {
             aliases: [],
             group: 'meta',
             memberName: 'creator',
-            description: "Get info. on who coded Onyx :eyes:",
-            details: "Get info. on who coded Onyx :eyes:",
+            description: "Get info. on who coded Undrverse :eyes:",
+            details: "Get info. on who coded Undrverse :eyes:",
             examples: ["creator"]
         });
     }
@@ -24,11 +24,11 @@ module.exports = class CreatorCommand extends commando.Command {
             const embed = new Discord.MessageEmbed()
             .setColor(randomColour)
             .setTitle("About Silvia")
-            .setAuthor('Onyx', this.client.user.avatarURL, 'https://silvia-odwyer.github.io/Onyx-Discord-Bot-Website')
-            .setDescription("Onyx was coded by Silvia O'Dwyer, a Computer Science student. \n If you want to see more of her work, check out her GitHub at github.com/silvia-odwyer")
+            .setAuthor('Undrverse', this.client.user.avatarURL, 'https://github.com/undrverse')
+            .setDescription("The Bots was coded by Undrverse, a Computer Science student. \n If you want to see more of her work, check out her GitHub at https://github.com/undrverse")
             .setThumbnail(this.client.user.avatarURL)
             .addFields(
-                { name: 'Give Onyx A Star', value: "If you could star Onyx's GitHub repo, you'd make Silvia's day. :eyes: \n Or, Silvia would really appreciate if you could vote for this bot on discordbots.org, since it'll enable Onyx to be found on more servers, and to help Silvia keep working on it. " },
+                { name: 'Give Me A Star', value: "If you could star The Bots GitHub repo, you'd make Undrverse day. :eyes: \n Or, Silvia would really appreciate if you could vote for this bot on discordbots.org, since it'll enable Bots to be found on more servers, and to help Silvia keep working on it. " },
                 )
             .setTimestamp()
 

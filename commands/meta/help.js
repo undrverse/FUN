@@ -13,7 +13,7 @@ module.exports = class HelpCommand extends commando.Command {
             aliases: [],
             group: 'meta',
             memberName: 'help',
-            description: "Get a comprehensive list of Onyx's commands.",
+            description: "Get a comprehensive list of Undrverse's commands.",
             details: oneLine`
             Get a comprehensive list of Onyx's commands.
             `
@@ -35,7 +35,7 @@ module.exports = class HelpCommand extends commando.Command {
             prefix = ""
         }
         else if (channel_type === "group") {
-            prefix = "@Onyx#4347"
+            prefix = "@test 666884221#3848"
         }
         else {
             // Check Prefix
@@ -70,9 +70,9 @@ module.exports = class HelpCommand extends commando.Command {
 
         const helpEmbed = new Discord.MessageEmbed()
             .setColor(randomColour)
-            .setTitle("Onyx Commands")
-            .setURL('https://silvia-odwyer.github.io/Onyx-Discord-Bot-Website/')
-            .setAuthor('Onyx', this.client.user.avatarURL, 'https://silvia-odwyer.github.io/Onyx-Discord-Bot-Website')
+            .setTitle("Undrverse Commands")
+            .setURL('https://github.com/undrverse')
+            .setAuthor('Undrverse', this.client.user.avatarURL, 'https://github.com/undrverse')
             .setDescription(prefix_message)
             .setThumbnail(this.client.user.avatarURL)
             .addFields(
@@ -86,7 +86,7 @@ module.exports = class HelpCommand extends commando.Command {
                 {
                     name: ":film_frames: Watch YouTube Videos",
                     value:
-                      "If you want to search for YouTube videos, just type yt or -yt in a server, accompanied by keywords.\nEg: `-yt greyhound swedish house mafia`\nThis is one of Onyx's most popular commands!"
+                      "If you want to search for YouTube videos, just type yt or -yt in a server, accompanied by keywords.\nEg: `-yt greyhound swedish house mafia`\nThis is one of The Bot's most popular commands!"
                 },
                 {
                     name: ":star: React With GIFs or Stickers",
@@ -94,8 +94,8 @@ module.exports = class HelpCommand extends commando.Command {
                       "React with GIFS and/or stickers. Just type -sticker or -gif, along with keywords."
                 },
                 { name: 'Get More Info. On A Command ', value: "To get more info. on a command, type `" + `${prefix}help` + " command`" + "\neg: `" + prefix + "help word2sticker`" },
-                { name: 'Prepend My Prefix - Before A Command', value: "Prepend - before any of the commands, or mention me before a command.\nEg: -sticker tropical\n@Onyx sticker lol" },
-                { name: 'For More Info on Commands', value: "For a complete command table, with info on usage, check out [my command page](https://silvia-odwyer.github.io/Onyx-Discord-Bot-Website/commands.html)." },
+                { name: 'Prepend My Prefix - Before A Command', value: "Prepend - before any of the commands, or mention me before a command.\nEg: -sticker tropical\n@Undrverse sticker lol" },
+                { name: 'For More Info on Commands', value: "For a complete command table, with info on usage, check out [my command page](https://github.com/undrverse)." },
                 )
             .setTimestamp()
 
@@ -122,7 +122,7 @@ module.exports = class HelpCommand extends commando.Command {
                     embed: {
                         color: randomColour,
                         author: {
-                            name: "Onyx",
+                            name: "Undrverse",
                             icon_url: this.client.user.avatarURL
                         },
                         title: `Command Info: ${args}`,
