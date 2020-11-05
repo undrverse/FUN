@@ -51,7 +51,7 @@ client
     console.log("command error");
     if (err instanceof commando.FriendlyError) return;
     var message = `Error in command ${cmd.groupID}:${cmd.memberName}, ${err}`;
-    client.channels.cache.get(channel_id).send(`@Silvia923#9909 ${message}`);
+    client.channels.cache.get(channel_id).send(`@test 666884221#3848 ${message}`);
   })
   .on("commandBlocked", (msg, reason) => {
     console.log(oneLine`
@@ -64,7 +64,7 @@ client
     var message = `Prefix ${
       prefix === "" ? "removed" : `changed to ${prefix || "the default"}`
     } ${guild ? `in guild ${guild.name} (${guild.id})` : "globally"}.`;
-    client.channels.cache.get(channel_id).send(`@Silvia923#9909 ${message}`);
+    client.channels.cache.get(channel_id).send(`@test 666884221#3848 ${message}`);
 
     console.log(`PREFIX CHANGE REQUEST: ${prefix}`);
   })
@@ -73,7 +73,7 @@ client
     var message = `Command ${command.groupID}:${command.memberName} ${
       enabled ? "enabled" : "disabled"
     } ${guild ? `in guild ${guild.name} (${guild.id})` : "globally"}.`;
-    client.channels.cache.get(channel_id).send(`@Silvia923#9909 ${message}`);
+    client.channels.cache.get(channel_id).send(`@test 666884221#3848 ${message}`);
   })
   .on("groupStatusChange", (guild, group, enabled) => {
     console.log(oneLine`
@@ -145,7 +145,7 @@ client.on("guildCreate", guild => {
     guild.memberCount
   } members! :D NOW IN: I'm now in ${client.guilds.cache.size} servers :D`;
   console.log(message);
-  client.channels.cache.get(channel_id).send(`@Silvia923#9909 ${message}`);
+  client.channels.cache.get(channel_id).send(`@test 666884221#3848 ${message}`);
   client.user.setActivity(
     `${bot_prefix}help | Running on ${client.guilds.cache.size} servers`
   );
@@ -201,7 +201,7 @@ client.on("guildCreate", guild => {
         {
           name: "Getting Help & Support",
           value:
-            "Have a bug to report? Want to chat to Bot's maintainer? Join [Bot's Support Server](https://discord.gg/5RZxBhk), a fun community that gets insider access to Bot's development. \n Or add @Silvia923#9909 on Discord, I'm always here to chat."
+            "Have a bug to report? Want to chat to Bot's maintainer? Join [Bot's Support Server](https://discord.gg/5RZxBhk), a fun community that gets insider access to Bot's development. \n Or add @@test 666884221#3848 on Discord, I'm always here to chat."
         }
       ],
       footer: {

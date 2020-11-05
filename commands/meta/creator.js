@@ -23,12 +23,12 @@ module.exports = class CreatorCommand extends commando.Command {
 
             const embed = new Discord.MessageEmbed()
             .setColor(randomColour)
-            .setTitle("About Silvia")
+            .setTitle("About Undrverse")
             .setAuthor('Undrverse', this.client.user.avatarURL, 'https://github.com/undrverse')
             .setDescription("The Bots was coded by Undrverse, a Computer Science student. \n If you want to see more of her work, check out her GitHub at https://github.com/undrverse")
             .setThumbnail(this.client.user.avatarURL)
             .addFields(
-                { name: 'Give Me A Star', value: "If you could star The Bots GitHub repo, you'd make Undrverse day. :eyes: \n Or, Silvia would really appreciate if you could vote for this bot on discordbots.org, since it'll enable Bots to be found on more servers, and to help Silvia keep working on it. " },
+                { name: 'Give Me A Star', value: "If you could star The Bots GitHub repo, you'd make Undrverse day. :eyes: \n Or, Undrverse would really appreciate if you could vote for this bot on discordbots.org, since it'll enable Bots to be found on more servers, and to help Undrverse keep working on it. " },
                 )
             .setTimestamp()
 

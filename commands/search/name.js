@@ -15,7 +15,7 @@ module.exports = class AskCommand extends commando.Command {
             details: oneLine`
             Get stats on your first name
 			`,
-            examples: ["name silvia"]
+            examples: ["name Undrverse"]
         });
     }
 
