@@ -11,7 +11,7 @@ module.exports = class PokeCommand extends commando.Command {
             memberName: 'poke',
             description: "Poke another user! :point_right:",
             details: "Poke another user! :point_right:",
-            examples: ["poke @Silvia923#9909"],
+            examples: ["poke @test 666884221#3848"],
 
             args: [
                 {

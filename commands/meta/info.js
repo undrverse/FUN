@@ -11,8 +11,8 @@ module.exports = class InfoCommand extends commando.Command {
             aliases: [],
             group: 'meta',
             memberName: 'info',
-            description: "Get info on what Onyx was coded with.",
-            details: "Get info on what Onyx was coded with.",
+            description: "Get info on what Undrverse was coded with.",
+            details: "Get info on what Undrverse was coded with.",
             examples: ["info"]
         });
     }
@@ -52,11 +52,11 @@ module.exports = class InfoCommand extends commando.Command {
                         name: this.client.user.username,
                         icon_url: this.client.user.avatarURL
                     },
-                    title: `About Onyx`,
-                    description: "Onyx is coded using Node.JS and the DiscordJS library.",
+                    title: `About The Bots`,
+                    description: "Undrverse is coded using Node.JS and the DiscordJS library.",
                     fields: [{
                         name: "Command Prefix",
-                        value: `Onyx's custom prefix for this server is ${prefix} or @Onyx#4347`
+                        value: `Undrverse's custom prefix for this server is ${prefix} or @test 666884221#3848`
                     },
                     {
                         name: "Get Started",
@@ -64,12 +64,12 @@ module.exports = class InfoCommand extends commando.Command {
                     },
                     // {
                     //     name: "It's Open Source",
-                    //     // value: "If you could star Onyx's GitHub repo, you'd make Silvia's day. :eyes: \n Or, Silvia would really appreciate if you could vote for this bot on discordbots.org, since it'll enable Onyx to be found on more servers, and to help Silvia keep working on it. "
+                    //     // value: "If you could star Undrverse's GitHub repo, you'd make Silvia's day. :eyes: \n Or, Silvia would really appreciate if you could vote for this bot on discordbots.org, since it'll enable Undrverse to be found on more servers, and to help Silvia keep working on it. "
                     // }
                     ],
                     footer: {
                         icon_url: this.client.user.avatarURL,
-                        text: "Coded by Silvia923#9909 <3"
+                        text: "@test 666884221#3848 <3"
                     }
                 }
             });

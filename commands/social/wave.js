@@ -13,7 +13,7 @@ module.exports = class WaveCommand extends commando.Command {
             memberName: 'wave',
             description: "Wave at another user! :wave:",
             details: "Wave at another user! :wave:",
-            examples: ["wave @Silvia923#9909"],
+            examples: ["wave @test 666884221#3848"],
 
             args: [
                 {

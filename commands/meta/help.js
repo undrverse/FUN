@@ -15,7 +15,7 @@ module.exports = class HelpCommand extends commando.Command {
             memberName: 'help',
             description: "Get a comprehensive list of Undrverse's commands.",
             details: oneLine`
-            Get a comprehensive list of Onyx's commands.
+            Get a comprehensive list of The Bot's commands.
             `
         });
 
@@ -139,7 +139,7 @@ module.exports = class HelpCommand extends commando.Command {
                         ],
                         footer: {
                             icon_url: this.client.user.avatarURL,
-                            text: "Coded by Silvia923#9909 <3"
+                            text: "@test 666884221#3848 <3"
                         }
                     }
                 });

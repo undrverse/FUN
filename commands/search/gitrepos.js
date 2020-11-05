@@ -11,7 +11,7 @@ module.exports = class GitReposCommand extends commando.Command {
             memberName: 'gitrepos',
             description: "See how many repos a user has on GitHub.",
             details: "See how many repos a user has on GitHub.",
-            examples: ["gitrepos silvia-odwyer"]
+            examples: ["gitrepos Undrverse"]
         });
     }
 

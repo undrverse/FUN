@@ -59,7 +59,7 @@ module.exports = class PixabayCommand extends commando.Command {
                         const photoEmbed = new Discord.MessageEmbed()
                         .setColor(randomColour)
                         .setTitle(`Public Domain Image From Pixabay Related To ${search_term}`)
-                        .setURL('https://silvia-odwyer.github.io/Onyx-Discord-Bot-Website/')
+                        .setURL('https://github.com/undrverse')
                         .setDescription(`[Original image found here](${out.hits[randomNumber].pageURL}) on [Pixabay](https://pixabay.com)`)
                         .setImage(random_img_link)
                         .setThumbnail(this.client.user.avatarURL)

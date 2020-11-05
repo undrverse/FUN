@@ -9,9 +9,9 @@ module.exports = class HiCommand extends commando.Command {
             aliases: [],
             group: 'fun',
             memberName: 'hi',
-            description: "Onyx loves saying hi to people.",
+            description: "Undrverse loves saying hi to people.",
             details: oneLine`
-            Onyx loves saying hi to people.
+            Undrverse loves saying hi to people.
 			`,
             examples: ["hi"]
         });

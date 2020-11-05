@@ -39,10 +39,10 @@ client
 // Bot status
 client
   .on("reconnecting", () => {
-    console.warn("Onyx is reconnecting...");
+    console.warn("Undrverse is reconnecting...");
   })
   .on("disconnect", () => {
-    console.warn("Warning! Onyx has disconnected!");
+    console.warn("Warning! Undrverse has disconnected!");
   });
 
 // Command specific event listeners that come with the Commando module
@@ -176,7 +176,7 @@ client.on("guildCreate", guild => {
       fields: [
         {
           name: "My Prefixes",
-          value: "My default prefixes are `-` and `@Onyx#4347`"
+          value: "My default prefixes are `-` and `@test 666884221#3848`"
         },
         {
           name: "Seeing All Of My Commands",
@@ -186,7 +186,7 @@ client.on("guildCreate", guild => {
         {
           name: ":film_frames: Watch YouTube Videos",
           value:
-            "If you want to search for YouTube videos, just type yt or -yt in a server, accompanied by keywords.\nEg: `-yt greyhound swedish house mafia`\nThis is one of Onyx's most popular commands!"
+            "If you want to search for YouTube videos, just type yt or -yt in a server, accompanied by keywords.\nEg: `-yt greyhound swedish house mafia`\nThis is one of Bot's most popular commands!"
         },
         {
           name: ":star: React With GIFs or Stickers",
@@ -196,12 +196,12 @@ client.on("guildCreate", guild => {
         {
           name: "See All My Commands",
           value:
-            "Visit my [official website](https://silvia-odwyer.github.io/Onyx-Discord-Bot-Website/), for all my commands! ^^ <3"
+            "Visit my [official website](https://github.com/undrverse), for all my commands! ^^ <3"
         },
         {
           name: "Getting Help & Support",
           value:
-            "Have a bug to report? Want to chat to Onyx's maintainer? Join [Onyx's Support Server](https://discord.gg/cSWHaEK), a fun community that gets insider access to Onyx's development. \n Or add @Silvia923#9909 on Discord, I'm always here to chat."
+            "Have a bug to report? Want to chat to Bot's maintainer? Join [Bot's Support Server](https://discord.gg/5RZxBhk), a fun community that gets insider access to Bot's development. \n Or add @Silvia923#9909 on Discord, I'm always here to chat."
         }
       ],
       footer: {

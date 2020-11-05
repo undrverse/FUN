@@ -13,9 +13,9 @@ module.exports = class AskCommand extends commando.Command {
             aliases: [],
             group: 'search',
             memberName: 'ask',
-            description: "Ask Onyx anything, and she'll provide an answer from Wolfram|Alpha, an information engine.",
+            description: "Ask Bots anything, and she'll provide an answer from Wolfram|Alpha, an information engine.",
             details: oneLine`
-            Ask Onyx anything, and she'll provide an answer from Wolfram|Alpha, an information engine.
+            Ask Bots anything, and she'll provide an answer from Wolfram|Alpha, an information engine.
 			`,
             examples: ["ask"]
         });

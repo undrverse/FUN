@@ -10,9 +10,9 @@ module.exports = class InviteCommand extends commando.Command {
             aliases: [],
             group: 'meta',
             memberName: 'invite',
-            description: "Get Onyx's invite link, so that she can be invited to other servers.",
+            description: "Get The Bot's invite link, so that she can be invited to other servers.",
             details: oneLine`
-            Get Onyx's invite link, so that she can be invited to other servers.
+            Get Bot's invite link, so that she can be invited to other servers.
 			`,
             examples: ["invite"],
 
@@ -31,7 +31,7 @@ module.exports = class InviteCommand extends commando.Command {
                 embed: {
                     color: randomColour,
                     description: "Use this link to invite me to other servers :eyes:",
-                    title: `Onyx Invite Link`,
+                    title: `Bots Invite Link`,
                     fields: [
                         {
                             name: `Link`,
