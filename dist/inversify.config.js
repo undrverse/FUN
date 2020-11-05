@@ -1,0 +1,23 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+require("reflect-metadata");
+const inversify_1 = require("inversify");
+const types_1 = require("./types");
+const message_responder_1 = require("./services/message-responder");
+const ping_finder_1 = require("./services/ping-finder");
+const guild_greeter_1 = require("./services/guild-greeter");
+const arccorp_greeting_1 = require("./services/greetings/sc/arccorp-greeting");
+const canvas_helper_1 = require("./services/canvas-helper");
+const bot_1 = require("./bot");
+const discord_js_1 = require("discord.js");
+const container = new inversify_1.Container();
+exports.container = container;
+container.bind(types_1.TYPES.Bot).to(bot_1.Bot).inSingletonScope();
+container.bind(types_1.TYPES.MessageResponder).to(message_responder_1.MessageResponder).inSingletonScope();
+container.bind(types_1.TYPES.PingFinder).to(ping_finder_1.PingFinder).inSingletonScope();
+container.bind(types_1.TYPES.GuildGreeter).to(guild_greeter_1.GuildGreeter).inSingletonScope();
+container.bind(types_1.TYPES.ArccorpGreeting).to(arccorp_greeting_1.ArccorpGreeting).inSingletonScope();
+container.bind(types_1.TYPES.CanvasHelper).to(canvas_helper_1.CanvasHelper).inSingletonScope();
+container.bind(types_1.TYPES.Client).toConstantValue(new discord_js_1.Client());
+container.bind(types_1.TYPES.Token).toConstantValue(process.env.TOKEN);
+//# sourceMappingURL=inversify.config.js.map
