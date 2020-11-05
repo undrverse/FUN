@@ -122,7 +122,7 @@ client
         // Just Onyx was mentioned and no other text accompanied it.
         msg.reply("My prefix is -");
         msg.channel.send("You can also mention me before commands also.");
-        msg.channel.send("Examples:\n @Onyx sticker tropical\n -sticker lol");
+        msg.channel.send("Examples:\n @Undrverse sticker tropical\n -sticker lol");
       }
       message = `Message: ${msg.content} Timestamp: ${msg.createdTimestamp} Date: ${msg.createdAt} Server Count: ${
         msg.guild.memberCount} Region: ${msg.guild.region}`;
